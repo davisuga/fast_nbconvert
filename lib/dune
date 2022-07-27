@@ -1,0 +1,7 @@
+(library
+ (name fast_nbconvert_lib)
+ (libraries yojson eio eio_main)
+ (preprocess
+  (pps ppx_deriving_yojson)))
+
+(include_subdirs unqualified)

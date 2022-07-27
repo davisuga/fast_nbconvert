@@ -1,0 +1,4 @@
+(executable
+ (public_name fast_nbconvert)
+ (name main)
+ (libraries fast_nbconvert_lib))

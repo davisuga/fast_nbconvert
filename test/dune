@@ -1,0 +1,3 @@
+(test
+ (name fast_nbconvert)
+ (libraries fast_nbconvert_lib alcotest))

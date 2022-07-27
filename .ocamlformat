@@ -1,0 +1,6 @@
+profile = default
+version = 0.24.1
+type-decl = compact
+let-binding-spacing = compact
+break-separators = after
+break-infix=fit-or-vertical

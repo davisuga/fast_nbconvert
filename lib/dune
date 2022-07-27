@@ -1,6 +1,6 @@
 (library
  (name fast_nbconvert_lib)
- (libraries yojson eio eio_main)
+ (libraries yojson eio base eio_main)
  (preprocess
   (pps ppx_deriving_yojson)))
 

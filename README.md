@@ -3,5 +3,5 @@
 ## Usage:
 
 ```bash
-./fast_nbconvert [path to notebook] > [path to python file]
+./fast_nbconvert.exe [path to notebook] > [path to python file]
 ```

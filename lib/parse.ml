@@ -27,7 +27,7 @@ let make_py_file path =
                      (String.concat "" (source |> List.map (fun s -> "# " ^ s)))
                | _ -> ""))
   >|= String.concat "\n"
-  >|= output_string (open_out (path ^ ".py"))
+  >|= print_string
   |> function
   | Ok _ -> "nicee"
   | Error e -> failwith ("Fuck " ^ e)

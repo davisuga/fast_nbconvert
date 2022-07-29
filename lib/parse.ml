@@ -1,4 +1,3 @@
-let num_domains = try int_of_string Sys.argv.(1) with _ -> 4
 let open_file path env = Eio.Dir.load (Eio.Stdenv.cwd env) path
 
 let get_sources_paths ext path =

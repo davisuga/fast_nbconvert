@@ -29,15 +29,6 @@ let get_py_file_path path =
   |> String.concat ".")
   ^ ".py"
 
-let write_py_files path =
-  open_out
-    ((path
-     |> String.split_on_char '.'
-     |> Base.List.drop_last
-     |> Option.value ~default:[]
-     |> String.concat ".")
-    ^ ".py")
-
 let make_py_file ~create_file path =
   let open Ipynb_types in
   let open Ppx_deriving_yojson_runtime in

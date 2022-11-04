@@ -1,10 +1,7 @@
-(* let open_file path env = Eio.Dir.load (Eio.Stdenv.cwd env) path *)
-
 let get_sources_paths ext path =
   Utils.dir_contents path |> List.filter (String.ends_with ~suffix:ext)
 
 let with_cell_counter num cell = Printf.sprintf "# In[%i]\n%s" num cell
-(* let create_file = try Sys.argv.(2) = "--make-file" with _ -> false *)
 
 let print_py_code_cell source index =
   with_cell_counter index

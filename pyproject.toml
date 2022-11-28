@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "fast_nbconvert"
-version = "0.1.2"
-description = ""
+version = "0.1.3"
+description = "Blazingly fast jupyter notebook to python converter"
 authors = ["Davi Suga <daviciencia1@gmail.com>"]
 include = ['fast_nbconvert/fast_nbconvert']
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
